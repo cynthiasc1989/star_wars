@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 30%;
+    background-color: #272727;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.right-panel {
+    width: 70%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: auto; 
+    height: 100%;
+}
+
+.block {
+    margin-bottom: 15px;
+    padding: 15px 15px 15px 50px; 
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.block:hover {
+    background-color: #505050;
+}
+
+.block-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.character-info-container {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    flex: 0 0 auto; 
+}
+
+.character-info {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.character-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.character-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.title {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
